@@ -1,7 +1,7 @@
-# Upon execuing the following script the user will be provided with,
+# Upon executing the following script, the user will be provided with,
 # A summary of the data set and its variables provided by the 'summary.txt' file.
 # 4 histogram images(.png files) of the varibles compared amongst the 3 iris species.
-# 2 scatter plot images (.png files) of each pair of variables. i.e sepal length vs sepal width and petal length and petal width.
+# 2 scatter plot images (.png files) of each pair of variables. i.e sepal length plotted against sepal width and petal length plotted against petal width.
 
 # Commands for importing the various python libraries used in order for the script to function properly.
 import matplotlib.pyplot as plt 
@@ -15,7 +15,7 @@ sns.set(palette='bright')
 # The iris data set is read using pandas, the data set is abbreviated to 'df'.
 df = pd.read_csv('iris.csv')
 
-# Allows for segmentation of the the data set into the various plant species.
+# Allows for segmentation of the data set into the various plant species.
 setosa = df[df['variety'] == 'setosa']
 versicolor = df[df['variety'] == 'versicolor']
 virginica = df[df['variety'] == 'virginica']
