@@ -85,11 +85,7 @@ with open("summary.txt", 'a') as file:
     file.write("\n \n") # '\n' creates a line break.
 ```
 
-<<<<<<< HEAD
 ### Descriptive statistical data of the Iris Data Set 
-=======
-#### Descriptive statistical data of the Iris Data Set 
->>>>>>> 903d828c30d44bb13af910d3785d4d7256456390
 Calculation | Sepal Length | Sepal Width | Petal Length | Petal Width |
 |------------| ------------| -----------| -----------|     -----------|
 | count |    150.000000 |   150.000000 |   150.000000 |  150.000000 |
@@ -104,7 +100,7 @@ Calculation | Sepal Length | Sepal Width | Petal Length | Petal Width |
 ## Depiction and explanation of the visual graphics that are outputted upon execution of the analysis.py python script.
 
 ![sepallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20length.png)
-<<<<<<< HEAD
+
 
 Table for Sepal Length Variable
 Plant Species | Mean | Min | Max | SD | 
@@ -112,11 +108,6 @@ Plant Species | Mean | Min | Max | SD |
 Setosa |      5.006 | 4.3 | 5.8 | 0.348947 |
 Versicolor | 5.936 | 4.9 | 7.0 | 0.510983 |
 Virginica  | 6.588 | 4.9 | 7.9 | 0.629489 |
-
-
-
-
-
 
 
 ![sepalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20width.png)
@@ -152,11 +143,5 @@ Versicolor | 1.326 | 1.0 | 1.8 | 0.195765 |
 Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 
 
-=======
-![sepalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20width.png)
-![petallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20petal%20length.png)
-![petalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20petal%20width.png)
-
->>>>>>> 903d828c30d44bb13af910d3785d4d7256456390
 ![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
 ![scatter_petal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20petal%20length%20vs%20petal%20width.png)
