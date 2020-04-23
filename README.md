@@ -72,3 +72,15 @@ versicolor = df[df['variety'] == 'versicolor']
 virginica = df[df['variety'] == 'virginica']
 ```
 
+## The initial creation of a summary from the information within the Iris data set.
+The following code allows for the creation of a summary table, which depicts data such as the mean, min, max and standard deviation. Within this summary table the three plant species are taken into consideration. The contents of the summary table are then appended to the "summary.txt" file.
+
+``` python
+# The following commands allow for the initial creation of the 'summary.txt' file.
+with open("summary.txt", 'a') as file: # 'a' is used to append additions to a file.
+    file.write("Descriptive statistical data of the Iris Data Set \n \n") # (Formatting) Header added to the table.
+with open("summary.txt", 'a') as file:
+    file.write(df.describe().to_string()) # The pandas DataFrame.describe() command provides calculations of statistical data related to the data set set. e.g. mean, std and percentile.
+with open("summary.txt", 'a') as file:
+    file.write("\n \n") # '\n' creates a line break.
+```
