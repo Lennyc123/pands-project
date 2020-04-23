@@ -11,8 +11,8 @@ Fishers iris data set is a multivariate data set (i.e. where simultaneous observ
 Within the data set, there are 50 samples from each of three species of Iris (Iris Setosa, Iris Virginica, and Iris Versicolor). Of these three species, four variables were obtained.
 The length and the width of the sepals and petals, which is measured in centimetres.
 
-Depiction of the variables within the data set|
----
+|Depiction of the variables within the data set|
+|---|
 |Sepal length (cm)|
 |Sepal width (cm)|
 |Petal length (cm)|
@@ -98,3 +98,11 @@ Calculation | Sepal Length | Sepal Width | Petal Length | Petal Width |
 | max   |    7.900000   |  4.400000    |  6.900000    | 2.500000    |
 
 ## Depiction and explanation of the visual graphics that are outputted upon execution of the analysis.py python script.
+
+![sepallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20length.png)
+![sepalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20width.png)
+![petallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20petal%20length.png)
+![petalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20petal%20width.png)
+
+![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
+![scatter_petal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20petal%20length%20vs%20petal%20width.png)
