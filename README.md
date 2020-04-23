@@ -86,8 +86,8 @@ with open("summary.txt", 'a') as file:
 ```
 
 #### Descriptive statistical data of the Iris Data Set 
-       sepal.length  sepal.width  petal.length  petal.width
-	   ------------| ------------| -----------| -----------|
+       |sepal.length  sepal.width  petal.length  petal.width
+	   |------------| ------------| -----------| -----------|
 count |    150.000000 |   150.000000 |   150.000000 |  150.000000 |
 mean  |     5.843333  |   3.057333   |  3.758000    | 1.199333    |
 std   |    0.828066   |  0.435866    |  1.765298    | 0.762238    |
