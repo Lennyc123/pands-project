@@ -2,13 +2,11 @@
 
 ## Brief introduction
 Within this section the reader should be provided with an initial overview that will allow for one to grasp the direction of which the project has taken.
-The overarching approach of the following project is related to that of investigating a data set and further expanding on the concept of investigative research. The development of the project itself occurs through the usage of an object-oriented, high-level programming language known as Python. The data set that is to be dissected throughout the course of the project is the Fisher iris data set.
- https://www.python.org/doc/essays/blurb/
+The overarching approach of the following project is related to that of investigating a data set and further expanding on the concept of investigative research. The development of the project itself occurs through the usage of an object-oriented, high-level programming language known as Python (1). The data set that is to be dissected throughout the course of the project is the Fisher iris data set (2).
 
 ## An abstract of information related to Fisher’s iris data set.
-https://en.wikipedia.org/wiki/Iris_flower_data_set
 Fishers iris data set is a multivariate data set (i.e. where simultaneous observation and analysis of more than one outcome variable occurs). The data set was introduced by the British statistician and biologist Ronald Fisher in his 1936 paper _The use of multiple measurements in taxonomic problems_.
-Within the data set, there are 50 samples from each of three species of Iris (Iris Setosa, Iris Virginica, and Iris Versicolor). Of these three species, four variables were obtained.
+Within the data set, there are 50 samples from each of three species of Iris (Iris Setosa, Iris Virginica, and Iris Versicolor). Of these three species, four variables were obtained (2).
 The length and the width of the sepals and petals, which is measured in centimetres.
 
 |Depiction of the variables within the data set|
@@ -19,10 +17,8 @@ The length and the width of the sepals and petals, which is measured in centimet
 |Petal width (cm)|
 
 ## Accessibility of the data set
-The data set is freely available to the public at the UCI Machine Learning Repository. The data set currently stands as the most popular data set on their site.
-http://archive.ics.uci.edu/ml/datasets/iris
-Due to the popularity of the data set, the iris flower data set is built into some coding libraries.
-https://www.techopedia.com/definition/32880/iris-flower-data-set
+The data set is freely available to the public at the UCI Machine Learning Repository. The data set currently stands as the most popular data set on their site (3).
+Due to the popularity of the data set, the iris flower data set is built into some coding libraries (4).
 
 ## The directional driving force behind the development of the project
 This segment explains the route of which was to be paved and acted as the motivational factor behind the growth of the python script.
@@ -37,20 +33,20 @@ The aim of the output related to the analysis.py script was to provide a summary
 ```
 
 ## The initialisation of the python script i.e. analysis.py
-The python code was written in version 3.7 which was downloaded from https://www.anaconda.com/distribution/ . This open-source Anaconda individual Edition comes with several python libraries.
+The python code was written in version 3.7 which was downloaded from _Anaconda_ (5). This open-source Anaconda individual Edition comes with several python libraries.
 
 In order for the execution analysis.py to occur successfully one must have the following python libraries installed.
 
-Mathplotlib – a comprehensive library for creating static, animated and interactive visualizations in python. https://matplotlib.org/
+Mathplotlib – a comprehensive library for creating static, animated and interactive visualizations in python (6). 
 
-Pandas – an open source data analysis and manipulation tool. https://pandas.pydata.org/
+Pandas – an open source data analysis and manipulation tool (7).
 
-NumPy – a fundamental package for scientific computing. https://numpy.org/
+NumPy – a fundamental package for scientific computing (8). 
 
-Seaborn – a data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
+Seaborn – a data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics (9). 
 
 ## Utilisation of the additional python libraries.
-In order to make use of these python libraries, they must first be imported within the script.
+In order to make use of these python libraries, they must first be imported within the script (10).
 ``` python
 # Commands for importing the various python libraries used in order for the script to function properly.
 import matplotlib.pyplot as plt 
@@ -59,16 +55,16 @@ import numpy as np
 import seaborn as sns
 ```
 ## Creation of a DataFrame.
-As previously stated, Pandas acts as an open source data analysis and manipulation tool. Throughout the course of the investigation and analysis, the usage of Pandas was central to both the interpretation of the dataset i.e the .csv file and the direction taken by the investigation of the dataset.
+As previously stated, Pandas acts as an open source data analysis and manipulation tool. Throughout the course of the investigation and analysis, the usage of Pandas was central to both the interpretation of the dataset i.e the .csv file and the direction taken by the investigation of the dataset (11).
 
-In order for python to process the contents of the dataset. The “iris.csv” file was interpreted as a dataframe.
+In order for python to process the contents of the dataset. The “iris.csv” file was interpreted as a dataframe (11).
 ``` python
 # The iris data set is read using pandas, the data set is abbreviated to 'df'.
 df = pd.read_csv('iris.csv')
 ```
 
 ## Reduction of the data set into more convenient sections.
-The following code was central to allowing the contents of the dataframe to be easily manipulated and was core to the development of the python script. Here the contents of the .csv file were segmented into the various plant species.
+The following code was central to allowing the contents of the dataframe to be easily manipulated and was core to the development of the python script. Here the contents of the .csv file were segmented into the various plant species (11).
 
 ``` python
 # Allows for segmentation of the data set into the various plant species.
@@ -78,7 +74,7 @@ virginica = df[df['variety'] == 'virginica']
 ```
 
 ## The initial creation of a summary from the information within the Iris data set.
-The following code allows for the creation of a summary table, which depicts data such as the mean, min, max and standard deviation. Within this summary table the three plant species are taken into consideration. The contents of the summary table are then appended to the "summary.txt" file.
+The following code allows for the creation of a summary table, which depicts data such as the mean, min, max and standard deviation. Within this summary table the three plant species are taken into consideration. The contents of the summary table are then appended to the "summary.txt" file (11, 12).
 
 ``` python
 # The following commands allow for the initial creation of the 'summary.txt' file.
@@ -105,7 +101,7 @@ Calculation | Sepal Length | Sepal Width | Petal Length | Petal Width |
 ## Depiction and explanation of the visual graphics that are outputted upon execution of the analysis.py python script.
 
 ### The creation of the histograms.
-The histograms were developed through the usage of Matplotlib, which allowed for the data contained within the dataset to be depicted in a visual manner. Due to the intuitive nature of Matplotlib development of the histograms occurred with ease and the commands contained within the library provided a vast amount of customisability. This highlights the benefits attached to the usage of Matplotlib, conveying Matplotlib as both an efficient library and one that provides full creative freedom to the user.
+The histograms were developed through the usage of Matplotlib (13), which allowed for the data contained within the dataset to be depicted in a visual manner. Due to the intuitive nature of Matplotlib development of the histograms occurred with ease and the commands contained within the library provided a vast amount of customisability. This highlights the benefits attached to the usage of Matplotlib, conveying Matplotlib as both an efficient library and one that provides full creative freedom to the user.
 
 Depicted below is an example of the python code that was used for the creation of the histograms.
 
@@ -123,7 +119,7 @@ plt.clf() # Contents of histogram cleared before beginning a new one.
 ```
 
 ### Development of tables to assist a potential interpreter of the data or user of the analysis.py script.
-A summary table was made for each individual variable, to assist one in interpreting the data. The initial thought process behind the creation of the tables, was linked to easing the process of understanding both, the information contained within the dataset and also to add a potentially more solid aspect that is related to interpreting the visual data. Upon viewing the visual data i.e., the histograms or scatter plots, the user will be provided with more concrete evidence of an analysis of the dataset. In terms of analysis, the visual data and the tables can be used in tandem to provide an understanding of the data.
+A summary table was made for each individual variable (14), to assist one in interpreting the data. The initial thought process behind the creation of the tables, was linked to easing the process of understanding both, the information contained within the dataset and also to add a potentially more solid aspect that is related to interpreting the visual data. Upon viewing the visual data i.e., the histograms or scatter plots, the user will be provided with more concrete evidence of an analysis of the dataset. In terms of analysis, the visual data and the tables can be used in tandem to provide an understanding of the data.
 
 ``` python
 # Creation of table for setpal length variable which is to be added to the 'summary.txt' file.
@@ -140,14 +136,14 @@ print(tbl_sepal_length) # Contents of the sepal length DataFrame are printed.
 
 ### Further developments to the summary.txt file
 As previously discussed the creation of the summary.txt file occurred through the usage of Pandas and its ability to provide a summary on information contained within a data set.
-A Brief depiction of the code used to create a summary of the data, further expanding on the point previously made above.
+A Brief depiction of the code used to create a summary of the data, further expanding on the point previously made above (15).
 ``` python
 with open("summary.txt", 'a') as file:
     file.write(df.describe().to_string()) # The pandas DataFrame.describe() command provides calculations of statistical data related to the data set set. e.g. mean, std and percentile.
 ```
 
 
-Contained within the summary.txt file are also the tables that were discussed in the previous section. The code shown below, conveys how additions to the summary.txt file were further made.
+Contained within the summary.txt file are also the tables that were discussed in the previous section. The code shown below, conveys how additions to the summary.txt file were further made (15).
 ``` python
 #The contents of the sepal length DataFrame are appended to the 'summary.txt' file.
 with open("summary.txt", 'a') as file:
@@ -159,7 +155,7 @@ with open("summary.txt", 'a') as file:
 ```
 
 ### The creation of the scatterplots
-Similar in nature to the developments of the histograms, the scatterplots were created through the usage of Matplotlib.
+Similar in nature to the developments of the histograms, the scatterplots were created through the usage of Matplotlib (16).
 
 The code below is an example, related to the creation of the scatterplots
 
@@ -172,7 +168,7 @@ plt.scatter(virginica['sepal.length'], virginica['sepal.width'], color="yellow",
 ```
 
 ### Addition of cosmetic features to the scatterplots.
-The code in the above section, may be described as the barebones of the scatterplots. Consisting primarily of the data related to the x and y coordinates. In order to ease user legibility, similar to the histograms additional python code was added to help provide an understanding of the data.
+The code in the above section, may be described as the barebones of the scatterplots. Consisting primarily of the data related to the x and y coordinates. In order to ease user legibility, similar to the histograms additional python code was added to help provide an understanding of the data (16).
 
 ``` python
 plt.title('Relationship between Sepal Length and Sepal Width') # Title added
@@ -187,7 +183,7 @@ plt.clf() # Contents of scatter plot cleared before beginning a new one.
 ### An explanation of the emphasis placed on easability of interpretation.
 Throughout the development of analysis.py with regards to the graphical data. All visual aspects related to the project, were developed with an overarching focus on ease of interpretation.
 
-Primarily seaborn acted as a crucial factor in allowing the stylistic elements to come to fruition. The code below, had an impact on all graphs which were developed through the usage of Matplotlib.
+Primarily seaborn (17) acted as a crucial factor in allowing the stylistic elements to come to fruition. The code below, had an impact on all graphs which were developed through the usage of Matplotlib.
 
 ``` python
 # Sets the color "Theme" for the various plots using a command from seaborn.
@@ -247,3 +243,39 @@ Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 ## Depiction of the scatterplots
 ![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
 ![scatter_petal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20petal%20length%20vs%20petal%20width.png)
+
+
+# References
+1 - https://www.python.org/doc/essays/blurb/
+
+2 - https://en.wikipedia.org/wiki/Iris_flower_data_set
+
+3 - http://archive.ics.uci.edu/ml/datasets/iris
+
+4 - https://www.techopedia.com/definition/32880/iris-flower-data-set
+
+5 - https://www.anaconda.com/distribution/
+
+6 - https://matplotlib.org/
+
+7 - https://pandas.pydata.org/
+
+8 - https://numpy.org/
+
+9 - https://seaborn.pydata.org/
+
+10 - https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3
+
+11 - https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
+
+12 - https://www.guru99.com/reading-and-writing-files-in-python.html
+
+13 - https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.hist.html
+
+14 - https://mode.com/python-tutorial/pandas-dataframe/
+
+15 - https://stackoverflow.com/questions/4706499/how-do-you-append-to-a-file-in-python
+
+16 - https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.scatter.html
+
+17 - https://seaborn.pydata.org/tutorial/color_palettes.html#palette-tutorial
