@@ -240,9 +240,37 @@ Setosa  |    0.246 | 0.1 | 0.6 | 0.104326 |
 Versicolor | 1.326 | 1.0 | 1.8 | 0.195765 |
 Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 
-## Depiction of the scatterplots
+## Depiction of the scatterplots with an accompaning table related to each individual variable
 ![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
+Table for Sepal Length Variable
+Plant Species | Mean | Min | Max | SD | 
+| --- | ---| --- | --- | --- |
+Setosa |      5.006 | 4.3 | 5.8 | 0.348947 |
+Versicolor | 5.936 | 4.9 | 7.0 | 0.510983 |
+Virginica  | 6.588 | 4.9 | 7.9 | 0.629489 |
+
+Table for Sepal Width Variable
+Plant Species | Mean | Min | Max    |    SD |
+| --- | --- | --- | --- | --- |
+Setosa |     3.428 | 2.3 | 4.4 | 0.375255 |
+Versicolor | 2.770 | 2.0 | 3.4 | 0.310644 |
+Virginica  | 2.974 | 2.2 | 3.8 | 0.319255 |
+
 ![scatter_petal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20petal%20length%20vs%20petal%20width.png)
+
+Table for Petal Length Variable
+Plant Species | Mean | Min | Max    |    SD |
+| --- | --- | --- | --- | --- |
+Setosa   |   1.462 | 1.0 | 1.9 | 0.171919 |
+Versicolor | 4.260 | 3.0 | 5.1 | 0.465188 |
+Virginica  | 5.552 | 4.5 | 6.9 | 0.546348 |
+
+Table for Petal Width Variable
+Plant Species | Mean | Min | Max    |    SD |
+| --- | --- | --- | --- | --- |
+Setosa  |    0.246 | 0.1 | 0.6 | 0.104326 |
+Versicolor | 1.326 | 1.0 | 1.8 | 0.195765 |
+Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 
 
 # References
