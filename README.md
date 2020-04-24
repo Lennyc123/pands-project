@@ -123,7 +123,7 @@ plt.clf() # Contents of histogram cleared before beginning a new one.
 ```
 
 ### Development of tables to assist a potential interpreter of the data or user of the analysis.py script.
-A summary table was made for each individual variable, to assist one in interpreting the data. The initial thought process behind the creation of the tables, was linked to easing the process of understanding both the information contained within the dataset and also to add a potentially more solid aspect that is related to interpreting the visual data. Upon viewing the visual data i.e., the histograms or scatter plots, the user will be provided with more concrete evidence of an analysis of the dataset. In terms of analysis, the visual data and the tables can be used in tandem to provide an understanding of the data.
+A summary table was made for each individual variable, to assist one in interpreting the data. The initial thought process behind the creation of the tables, was linked to easing the process of understanding both, the information contained within the dataset and also to add a potentially more solid aspect that is related to interpreting the visual data. Upon viewing the visual data i.e., the histograms or scatter plots, the user will be provided with more concrete evidence of an analysis of the dataset. In terms of analysis, the visual data and the tables can be used in tandem to provide an understanding of the data.
 
 ``` python
 # Creation of table for setpal length variable which is to be added to the 'summary.txt' file.
@@ -184,20 +184,7 @@ plt.savefig('Scatter sepal length vs sepal width.png') # scatter plot saved as a
 plt.clf() # Contents of scatter plot cleared before beginning a new one.
 ```
 
-Addition of cosmetic features to the scatterplots.
-The code in the above section, may be described as the barebones of the scatterplots. Consisting primarily of the data related to the x and y coordinates. In order to ease user legibility, similar to the histograms additional python code was added to help provide an understanding of the data.
-
-``` python
-plt.title('Relationship between Sepal Length and Sepal Width') # Title added
-plt.xlabel('Sepal Length (cm)') # Label for x axis
-plt.ylabel('Sepal Width (cm)') # Label for y axis
-plt.legend() # addition of a legend
-#plt.show()
-plt.savefig('Scatter sepal length vs sepal width.png') # scatter plot saved as an image (.png file)
-plt.clf() # Contents of scatter plot cleared before beginning a new one.
-```
-
-An explanation of the emphasis placed on easability of interpretation.
+### An explanation of the emphasis placed on easability of interpretation.
 Throughout the development of analysis.py with regards to the graphical data. All visual aspects related to the project, were developed with an overarching focus on ease of interpretation.
 
 Primarily seaborn acted as a crucial factor in allowing the stylistic elements to come to fruition. The code below, had an impact on all graphs which were developed through the usage of Matplotlib.
