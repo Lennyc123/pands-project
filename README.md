@@ -37,16 +37,16 @@ The python code was written in version 3.7 which was downloaded from _Anaconda_ 
 
 In order for the execution analysis.py to occur successfully one must have the following python libraries installed.
 
-Mathplotlib – a comprehensive library for creating static, animated and interactive visualizations in python (6). 
+**Matplotlib** – a comprehensive library for creating static, animated and interactive visualizations in python (6). 
 
-Pandas – an open source data analysis and manipulation tool (7).
+**Pandas** – an open source data analysis and manipulation tool (7).
 
-NumPy – a fundamental package for scientific computing (8). 
+**NumPy** – a fundamental package for scientific computing (8). 
 
-Seaborn – a data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics (9). 
+**Seaborn** – a data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics (9). 
 
 ## Utilisation of the additional python libraries.
-In order to make use of these python libraries, they must first be imported within the script (10).
+_In order to make use of these python libraries, they must first be imported within the script (10)._
 ``` python
 # Commands for importing the various python libraries used in order for the script to function properly.
 import matplotlib.pyplot as plt 
@@ -57,7 +57,7 @@ import seaborn as sns
 ## Creation of a DataFrame.
 As previously stated, Pandas acts as an open source data analysis and manipulation tool. Throughout the course of the investigation and analysis, the usage of Pandas was central to both the interpretation of the dataset i.e the .csv file and the direction taken by the investigation of the dataset (11).
 
-In order for python to process the contents of the dataset. The “iris.csv” file was interpreted as a dataframe (11).
+_In order for python to process the contents of the dataset. The “iris.csv” file was interpreted as a dataframe (11)._
 ``` python
 # The iris data set is read using pandas, the data set is abbreviated to 'df'.
 df = pd.read_csv('iris.csv')
@@ -103,7 +103,7 @@ Calculation | Sepal Length | Sepal Width | Petal Length | Petal Width |
 ### The creation of the histograms.
 The histograms were developed through the usage of Matplotlib (13), which allowed for the data contained within the dataset to be depicted in a visual manner. Due to the intuitive nature of Matplotlib development of the histograms occurred with ease and the commands contained within the library provided a vast amount of customisability. This highlights the benefits attached to the usage of Matplotlib, conveying Matplotlib as both an efficient library and one that provides full creative freedom to the user.
 
-Depicted below is an example of the python code that was used for the creation of the histograms.
+_Depicted below is an example of the python code that was used for the creation of the histograms._
 
 ``` python
 # Creation of histogram for sepal length which takes the 3 different plant species into consideration.
@@ -157,7 +157,7 @@ with open("summary.txt", 'a') as file:
 ### The creation of the scatterplots
 Similar in nature to the developments of the histograms, the scatterplots were created through the usage of Matplotlib (16).
 
-The code below is an example, related to the creation of the scatterplots
+_The code below is an example, related to the creation of the scatterplots_
 
 ``` python
 # Data related to sepal length and sepal width of the 3 iris plants is read from the DataFrame.
@@ -200,7 +200,7 @@ alpha=0.5
 ![sepallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20length.png)
 
 
-Table for Sepal Length Variable
+#### Table for Sepal Length Variable
 Plant Species | Mean | Min | Max | SD | 
 | --- | ---| --- | --- | --- |
 Setosa |      5.006 | 4.3 | 5.8 | 0.348947 |
@@ -211,7 +211,7 @@ Virginica  | 6.588 | 4.9 | 7.9 | 0.629489 |
 ![sepalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20width.png)
 
 
-Table for Sepal Width Variable
+#### Table for Sepal Width Variable
 Plant Species | Mean | Min | Max    |    SD |
 | --- | --- | --- | --- | --- |
 Setosa |     3.428 | 2.3 | 4.4 | 0.375255 |
@@ -222,7 +222,7 @@ Virginica  | 2.974 | 2.2 | 3.8 | 0.319255 |
 ![petallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20petal%20length.png)
 
 
-Table for Petal Length Variable
+#### Table for Petal Length Variable
 Plant Species | Mean | Min | Max    |    SD |
 | --- | --- | --- | --- | --- |
 Setosa   |   1.462 | 1.0 | 1.9 | 0.171919 |
@@ -233,7 +233,7 @@ Virginica  | 5.552 | 4.5 | 6.9 | 0.546348 |
 ![petalwidth_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20petal%20width.png)
 
 
-Table for Petal Width Variable
+#### Table for Petal Width Variable
 Plant Species | Mean | Min | Max    |    SD |
 | --- | --- | --- | --- | --- |
 Setosa  |    0.246 | 0.1 | 0.6 | 0.104326 |
@@ -243,14 +243,14 @@ Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 ## Depiction of the scatterplots with an accompaning table related to each individual variable
 ![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
 
-Table for Sepal Length Variable
+#### Table for Sepal Length Variable
 Plant Species | Mean | Min | Max | SD | 
 | --- | ---| --- | --- | --- |
 Setosa |      5.006 | 4.3 | 5.8 | 0.348947 |
 Versicolor | 5.936 | 4.9 | 7.0 | 0.510983 |
 Virginica  | 6.588 | 4.9 | 7.9 | 0.629489 |
 
-Table for Sepal Width Variable
+#### Table for Sepal Width Variable
 Plant Species | Mean | Min | Max    |    SD |
 | --- | --- | --- | --- | --- |
 Setosa |     3.428 | 2.3 | 4.4 | 0.375255 |
@@ -259,14 +259,14 @@ Virginica  | 2.974 | 2.2 | 3.8 | 0.319255 |
 
 ![scatter_petal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20petal%20length%20vs%20petal%20width.png)
 
-Table for Petal Length Variable
+#### Table for Petal Length Variable
 Plant Species | Mean | Min | Max    |    SD |
 | --- | --- | --- | --- | --- |
 Setosa   |   1.462 | 1.0 | 1.9 | 0.171919 |
 Versicolor | 4.260 | 3.0 | 5.1 | 0.465188 |
 Virginica  | 5.552 | 4.5 | 6.9 | 0.546348 |
 
-Table for Petal Width Variable
+#### Table for Petal Width Variable
 Plant Species | Mean | Min | Max    |    SD |
 | --- | --- | --- | --- | --- |
 Setosa  |    0.246 | 0.1 | 0.6 | 0.104326 |
@@ -308,3 +308,7 @@ Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 16 - https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.scatter.html
 
 17 - https://seaborn.pydata.org/tutorial/color_palettes.html#palette-tutorial
+
+https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f
+
+https://commonmark.org/help/
