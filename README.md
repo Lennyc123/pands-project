@@ -242,6 +242,7 @@ Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 
 ## Depiction of the scatterplots with an accompaning table related to each individual variable
 ![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
+
 Table for Sepal Length Variable
 Plant Species | Mean | Min | Max | SD | 
 | --- | ---| --- | --- | --- |
