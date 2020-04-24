@@ -38,14 +38,18 @@ The aim of the output related to the analysis.py script was to provide a summary
 
 ## The initialisation of the python script i.e. analysis.py
 The python code was written in version 3.7 which was downloaded from https://www.anaconda.com/distribution/ . This open-source Anaconda individual Edition comes with several python libraries.
+
 In order for the execution analysis.py to occur successfully one must have the following python libraries installed.
+
 Mathplotlib – a comprehensive library for creating static, animated and interactive visualizations in python. https://matplotlib.org/
+
 Pandas – an open source data analysis and manipulation tool. https://pandas.pydata.org/
 NumPy – a fundamental package for scientific computing. https://numpy.org/
+
 Seaborn – a data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
 
 ## Utilisation of the additional python libraries.
-In order to use these python libraries, they must first be imported within the script.
+In order to make use of these python libraries, they must first be imported within the script.
 ``` python
 # Commands for importing the various python libraries used in order for the script to function properly.
 import matplotlib.pyplot as plt 
@@ -98,6 +102,64 @@ Calculation | Sepal Length | Sepal Width | Petal Length | Petal Width |
 | max   |    7.900000   |  4.400000    |  6.900000    | 2.500000    |
 
 ## Depiction and explanation of the visual graphics that are outputted upon execution of the analysis.py python script.
+
+### The creation of the histograms.
+The histograms were developed through the usage of Matplotlib, which allowed for the data contained within the dataset to be depicted in a visual manner. Due to the intuitive nature of Matplotlib development of the histograms occurred with ease and the commands contained within the library provided a vast amount of customisability. This highlights the benefits attached to the usage of Matplotlib, conveying Matplotlib as both an efficient library and one that provides full creative freedom to the user.
+
+Depicted below is an example of the python code that was used for the creation of the histograms.
+
+``` python
+# Creation of histogram for sepal length which takes the 3 different plant species into consideration.
+HSL = setosa['sepal.length'], versicolor['sepal.length'], virginica['sepal.length']
+plt.hist(HSL, color='c''m''y', label=['setosa', 'versicolor', 'virginica']) # Addition of color scheme to ease legibility.
+plt.xlabel('Value') # Label for x axis 
+plt.ylabel('Frequency') # label for y axis
+plt.title('Histogram of Sepal Length (cm)  Variable') # Title added to histogram
+plt.legend() # addition of a legend
+#plt.show() # Issue arose when the following command was left within the script, .png images were appearing white i.e the contents of the histograms were not added to the .png files.
+plt.savefig('Hist. sepal length.png') # Histogram of sepal length is saved as an image(.png file).
+plt.clf() # Contents of histogram cleared before beginning a new one.
+```
+
+### Development of tables to assist a potential interpreter of the data or user of the analysis.py script.
+A summary table was made for each individual variable, to assist one in interpreting the data. The initial thought process behind the creation of the tables, was linked to easing the process of understanding both the information contained within the dataset and also to add a potentially more solid aspect that is related to interpreting the visual data. Upon viewing the visual data i.e., the histograms or scatter plots, the user will be provided with more concrete evidence of an analysis of the dataset. In terms of analysis, the visual data and the tables can be used in tandem to provide an understanding of the data.
+
+``` python
+# Creation of table for setpal length variable which is to be added to the 'summary.txt' file.
+print('\n Table for Sepal Length Variable') # Heading of the table.
+tbl_sepal_length = pd.DataFrame(np.array([ # DataFrame for the variable sepal length created.
+[np.mean(setosa['sepal.length']), np.min(setosa['sepal.length']), np.max(setosa['sepal.length']), np.std(setosa['sepal.length'])],
+[np.mean(versicolor['sepal.length']), np.min(versicolor['sepal.length']), np.max(versicolor['sepal.length']), np.std(versicolor['sepal.length'])],
+[np.mean(virginica['sepal.length']), np.min(virginica['sepal.length']), np.max(virginica['sepal.length']), np.std(virginica['sepal.length'])],
+]),
+columns=['Mean', 'Min', 'Max', 'SD'], index=['Setosa','Versicolor', 'Virginica'] # Creation of Columns and Indices to provide formatting for the DataFrame.
+)
+print(tbl_sepal_length) # Contents of the sepal length DataFrame are printed.
+```
+
+### Further developments to the summary.txt file
+A previously discussed the creation of the summary.txt file occurred through the usage of Pandas and its ability to provide a summary on information contained within a data set.
+A Brief depiction of the code used to create a summary of the data, further expanding on the point previously made above.
+``` python
+with open("summary.txt", 'a') as file:
+    file.write(df.describe().to_string()) # The pandas DataFrame.describe() command provides calculations of statistical data related to the data set set. e.g. mean, std and percentile.
+```
+
+
+Contained within the summary.txt file are also the tables that were discussed in the previous section. The code shown below, conveys how additions to the summary.txt file were further made.
+``` python
+#The contents of the sepal length DataFrame are appended to the 'summary.txt' file.
+with open("summary.txt", 'a') as file:
+    file.write("Table for Sepal Length Variable\n") # (Formatting) Header added to the table.
+with open('summary.txt', 'a') as myfile:
+    myfile.write(tbl_sepal_length.to_string()) # The contents of the sepal length DataFrame are transformed to 'string' values and appended to the 'summary.txt' file.
+with open("summary.txt", 'a') as file:
+    file.write("\n \n") # Line break added for formatting.
+```
+
+
+
+
 
 ![sepallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20length.png)
 
