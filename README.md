@@ -44,6 +44,7 @@ In order for the execution analysis.py to occur successfully one must have the f
 Mathplotlib – a comprehensive library for creating static, animated and interactive visualizations in python. https://matplotlib.org/
 
 Pandas – an open source data analysis and manipulation tool. https://pandas.pydata.org/
+
 NumPy – a fundamental package for scientific computing. https://numpy.org/
 
 Seaborn – a data visualization library based on matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
@@ -138,7 +139,7 @@ print(tbl_sepal_length) # Contents of the sepal length DataFrame are printed.
 ```
 
 ### Further developments to the summary.txt file
-A previously discussed the creation of the summary.txt file occurred through the usage of Pandas and its ability to provide a summary on information contained within a data set.
+As previously discussed the creation of the summary.txt file occurred through the usage of Pandas and its ability to provide a summary on information contained within a data set.
 A Brief depiction of the code used to create a summary of the data, further expanding on the point previously made above.
 ``` python
 with open("summary.txt", 'a') as file:
@@ -157,10 +158,62 @@ with open("summary.txt", 'a') as file:
     file.write("\n \n") # Line break added for formatting.
 ```
 
+### The creation of the scatterplots
+Similar in nature to the developments of the histograms, the scatterplots were created through the usage of Matplotlib.
+
+The code below is an example, related to the creation of the scatterplots
+
+``` python
+# Data related to sepal length and sepal width of the 3 iris plants is read from the DataFrame.
+# Colour scheme, aplha set to 0.5, and labels added to ease legibilty of the scatter plot.
+plt.scatter(setosa['sepal.length'], setosa['sepal.width'], color="cyan", alpha=0.5, label="Iris setosa")
+plt.scatter(versicolor['sepal.length'], versicolor['sepal.width'], color="magenta", alpha=0.5, label="Iris versicolor")
+plt.scatter(virginica['sepal.length'], virginica['sepal.width'], color="yellow", alpha=0.5, label="Iris virginica")
+```
+
+### Addition of cosmetic features to the scatterplots.
+The code in the above section, may be described as the barebones of the scatterplots. Consisting primarily of the data related to the x and y coordinates. In order to ease user legibility, similar to the histograms additional python code was added to help provide an understanding of the data.
+
+``` python
+plt.title('Relationship between Sepal Length and Sepal Width') # Title added
+plt.xlabel('Sepal Length (cm)') # Label for x axis
+plt.ylabel('Sepal Width (cm)') # Label for y axis
+plt.legend() # addition of a legend
+#plt.show()
+plt.savefig('Scatter sepal length vs sepal width.png') # scatter plot saved as an image (.png file)
+plt.clf() # Contents of scatter plot cleared before beginning a new one.
+```
+
+Addition of cosmetic features to the scatterplots.
+The code in the above section, may be described as the barebones of the scatterplots. Consisting primarily of the data related to the x and y coordinates. In order to ease user legibility, similar to the histograms additional python code was added to help provide an understanding of the data.
+
+``` python
+plt.title('Relationship between Sepal Length and Sepal Width') # Title added
+plt.xlabel('Sepal Length (cm)') # Label for x axis
+plt.ylabel('Sepal Width (cm)') # Label for y axis
+plt.legend() # addition of a legend
+#plt.show()
+plt.savefig('Scatter sepal length vs sepal width.png') # scatter plot saved as an image (.png file)
+plt.clf() # Contents of scatter plot cleared before beginning a new one.
+```
+
+An explanation of the emphasis placed on easability of interpretation.
+Throughout the development of analysis.py with regards to the graphical data. All visual aspects related to the project, were developed with an overarching focus on ease of interpretation.
+
+Primarily seaborn acted as a crucial factor in allowing the stylistic elements to come to fruition. The code below, had an impact on all graphs which were developed through the usage of Matplotlib.
+
+``` python
+# Sets the color "Theme" for the various plots using a command from seaborn.
+sns.set(palette='bright')
+plt.hist(HSW, color='c''m''y', label=['setosa', 'versicolor', 'virginica']) # Addition of color scheme to ease legibility.
+```
+The colour scheme used throughout the project, was one of which, where the colours were in high contrast to each other. This further emphasises the distinct differences between the variables and the plant species. Usage of alpha command within the development of the scatterplots acted as another visual aid. Values that occur more than once, within the data are plotted with a distinctly more saturated colour.
+``` python
+alpha=0.5
+```
 
 
-
-
+## Depiction of the histograms with an accompaning table related to each individual variable
 ![sepallength_hist](https://github.com/Lennyc123/pands-project/blob/master/Images/Hist.%20sepal%20length.png)
 
 
@@ -204,6 +257,6 @@ Setosa  |    0.246 | 0.1 | 0.6 | 0.104326 |
 Versicolor | 1.326 | 1.0 | 1.8 | 0.195765 |
 Virginica |  2.026 | 1.4 | 2.5 | 0.271890 |
 
-
+## Depiction of the scatterplots
 ![scatter_sepal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20sepal%20length%20vs%20sepal%20width.png)
 ![scatter_petal](https://github.com/Lennyc123/pands-project/blob/master/Images/Scatter%20petal%20length%20vs%20petal%20width.png)
